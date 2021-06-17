@@ -158,10 +158,6 @@ img {
   align-items: center;
 }
 
-.more-details .wrap small {
-  font-size: 7px;
-}
-
 .other-details {
   margin: 1rem auto;
   display: flex;

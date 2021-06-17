@@ -73,7 +73,7 @@ async function fetchWeather(city) {
 //fetchWeather("Lagos");
 
 function createUi(data) {
-  const date = new Date().toString();
+  //const date = new Date().toString();
   const wrapper = document.createElement("div");
   wrapper.classList.add("wrapper");
 
@@ -84,7 +84,7 @@ function createUi(data) {
           <div class="wrap">
             <div class="date">
               <h3>${data.name}</h3>
-              <small>${date}</small>
+              
             </div>
             <p>${data.weather[0].main}</p>
           </div>
