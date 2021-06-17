@@ -41,6 +41,28 @@ async function fetchWeather(city) {
   const resp = await fetch(apiUrl(city));
   const responseData = await resp.json();
 
+  if (city !== responseData.name) {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("wrapper");
+
+    wrapper.innerHTML = `
+  
+
+        <section class="err-section">
+          <div class="errMsg">
+            <h1>${responseData.message}, Please enter a valid city.</h1>
+          </div>
+        </section>
+  
+  
+  
+  `;
+
+    main.innerHTML = "";
+
+    main.append(wrapper);
+  }
+
   console.log(responseData);
   hideLoader();
 

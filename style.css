@@ -106,8 +106,8 @@ img {
 }
 
 #loading {
-  width: 20rem;
-  height: 20rem;
+  width: 19rem;
+  height: 19rem;
   border: 5px solid #f3f3f3;
   border-top: 6px solid var(--darker-blue);
   border-radius: 100%;
@@ -172,6 +172,21 @@ img {
   width: 40%;
 }
 
+.err-section {
+  margin-top: 1rem;
+  display: grid;
+  place-items: center;
+  color: var(--lighter-gray);
+}
+
+.errMsg {
+  color: var(--lighter-gray);
+}
+
+.errMsg h1 {
+  text-transform: capitalize;
+}
+
 @media (max-width: 670px) {
   .toggler h4 {
     display: none;
@@ -196,5 +211,10 @@ img {
     font-size: 10px;
     color: var(--lighter-gray);
     width: 80%;
+  }
+  .errMsg h1 {
+    text-transform: capitalize;
+    font-size: 12px;
+    text-align: center;
   }
 }
